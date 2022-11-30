@@ -1,0 +1,1 @@
+C:\Users\Sandeep\AndroidStudioProjects\DocumentScanner\sdk\build\intermediates\cxx\Debug\562t1528\obj\arm64-v8a

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable-v24/round_dark_gray.xml" value="0.1065" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/background_with_shadow.xml" value="0.1065" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/bg_roundrect_ripple_light_border.xml" value="0.1" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.1065" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_baseline_arrow_back_36.xml" value="0.1085" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.155" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_baseline_check_36.xml" value="0.1085" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_baseline_insert_photo_24.xml" value="0.155" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.1045" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.1045" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_outline_home_24.xml" value="0.102" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_outline_remove_circle_outline_24.xml" value="0.102" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/drawable/ic_outline_upload_file_24.xml" value="0.111" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_account.xml" value="0.22" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_configure_scan.xml" value="0.25" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_crop_images.xml" value="0.2621654501216545" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_display.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_edit_display_scan.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_enter_otp.xml" value="0.25" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_filter_image.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_gallery_edit.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_gallery_ocr.xml" value="0.18614718614718614" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_ocr_complete_text.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_ocr_result.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_scan.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_sign_up.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_splash.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/activity_welcome.xml" value="0.25" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/cart_display_scan.xml" value="0.1203125" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/cart_document.xml" value="0.25" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/cart_filter.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/cart_gallery_edit.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/cart_grid_display.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/cart_ocr.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/cart_ocr_document.xml" value="0.22" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/cart_ocr_pager.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/cart_ocr_pager_cart.xml" value="0.2234375" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/cart_rename_pdf.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/country_list_item.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/empty_cart.xml" value="0.2234375" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/layout/more_bottom_nav.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/menu/display_more.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/menu/home_bottom_nav.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/menu/menu.xml" value="0.225" />
+        <entry key="..\:/Users/Sandeep/AndroidStudioProjects/DocumentScanner/app/src/main/res/xml/provider_paths.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

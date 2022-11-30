@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Dummy item to prevent Edittext from receiving focus -->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/main_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:text="Scanner App"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/main_search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_header"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/main_back"
+            android:visibility="gone"
+            android:layout_marginEnd="10dp"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp">
+
+            <com.gigamole.library.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sl_shadow_angle="45"
+                app:sl_shadow_color="@color/shadow"
+                app:sl_shadow_distance="5dp"
+                app:sl_shadow_radius="1dp"
+                app:sl_shadowed="true">
+
+                <ImageView
+                    app:tint="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_arrow_back_36" />
+
+            </com.gigamole.library.ShadowLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <EditText
+            android:id="@+id/main_search_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_dark_gray"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/search_white"
+            android:drawablePadding="15sp"
+            android:drawableTint="#a1a1a1"
+            android:gravity="center_vertical"
+            android:hint="Search document..."
+            android:padding="10dp"
+            android:paddingVertical="5sp"
+            android:singleLine="true"
+            android:textColor="@color/black" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/main_profile"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp">
+
+            <com.gigamole.library.ShadowLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sl_shadow_angle="45"
+                app:sl_shadow_color="@color/shadow"
+                app:sl_shadow_distance="5dp"
+                app:sl_shadow_radius="1dp"
+                app:sl_shadowed="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/icons8_information_96" />
+
+            </com.gigamole.library.ShadowLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main_content_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom"
+        android:layout_below="@id/main_search_ll"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <LinearLayout
+            android:id="@+id/main_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:padding="10dp"
+                android:src="@drawable/files"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.9"
+                android:gravity="center"
+                android:text="Keep on scanning\n\nStart new scan from your camera or
+                imported photos."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/main_arrow_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/arrow_down"
+                    android:visibility="invisible" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/main_arrow_img"
+                    android:layout_toRightOf="@id/main_arrow_img"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@color/card_bkg"
+                    app:cardCornerRadius="20dp"
+                    app:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/main_camera_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_outline_camera_alt_24"
+                            app:tint="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/main_gallery_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_insert_photo_24"
+                            app:tint="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/main_ocr_scan_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_document_scanner_24"
+                            app:tint="@color/white" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rcv_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/main_rcv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/cart_document" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                app:cardBackgroundColor="@color/card_bkg"
+                app:cardCornerRadius="20dp"
+                app:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/main_camera_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_outline_camera_alt_24"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/main_gallery_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_insert_photo_24"
+                        app:tint="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/main_ocr_scan_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_baseline_document_scanner_24"
+                        app:tint="@color/white" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/curved_background"
+        android:backgroundTint="#FEFDFE"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/main_ocr_scan_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.gigamole.library.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:sl_shadow_angle="90"
+                app:sl_shadow_color="@color/shadow"
+                app:sl_shadow_distance="3dp"
+                app:sl_shadow_radius="1dp"
+                app:sl_shadowed="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icons8_ocr_96" />
+            </com.gigamole.library.ShadowLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OCR"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_camera_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.gigamole.library.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:sl_shadow_angle="90"
+                app:sl_shadow_color="@color/shadow"
+                app:sl_shadow_distance="3dp"
+                app:sl_shadow_radius="1dp"
+                app:sl_shadowed="true">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icons8_pdf_96" />
+
+            </com.gigamole.library.ShadowLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Document"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_gallery_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.gigamole.library.ShadowLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:sl_shadow_angle="90"
+                app:sl_shadow_color="@color/shadow"
+                app:sl_shadow_distance="3dp"
+                app:sl_shadow_radius="1dp"
+                app:sl_shadowed="true">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icons8_ios_photos_96" />
+
+            </com.gigamole.library.ShadowLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

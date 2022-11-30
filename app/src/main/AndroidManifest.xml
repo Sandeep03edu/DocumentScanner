@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.scanner.document">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DocumentScanner"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr"/>
+
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity
+            android:name=".Scanning.OcrCompleteText"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert"
+            android:label="Ocr Text"
+            android:exported="false" />
+        <activity
+            android:name=".Scanning.GalleryOcrActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Scanning.GalleryEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Scanning.FilterImage"
+            android:exported="false" />
+        <activity
+            android:name=".Scanning.AccountActivity"
+            android:exported="false" /> <!-- File provider addition -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.scanner.document.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ica" />
+
+        <activity
+            android:name=".Scanning.DisplayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Utils.CropImagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Scanning.ConfigureScan"
+            android:exported="false" />
+        <activity
+            android:name=".Scanning.OcrResultActivity"
+            android:exported="false">
+            <meta-data
+                android:name="com.google.android.gms.vision.DEPENDENCIES"
+                android:value="orc" />
+        </activity>
+        <activity
+            android:name=".Scanning.ScanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.EnterOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
